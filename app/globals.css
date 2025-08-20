@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #0a1a3f; /* Dark Navy Blue */
+  --foreground: #ffffff; /* White */
+  --card: #f7f7f7; /* Light Gray */
+  --card-foreground: #0a1a3f; /* Dark Navy Blue */
+  --popover: #ffffff; /* White */
+  --popover-foreground: #0a1a3f; /* Dark Navy Blue */
+  --primary: #0a1a3f; /* Dark Navy Blue */
+  --primary-foreground: #ffffff; /* White */
+  --secondary: #ff7b00; /* Orange */
+  --secondary-foreground: #ffffff; /* White */
+  --muted: #f7f7f7; /* Light Gray */
+  --muted-foreground: #0a1a3f; /* Dark Navy Blue */
+  --accent: #ff7b00; /* Orange */
+  --accent-foreground: #ffffff; /* White */
+  --destructive: #d9534f; /* Red for errors */
+  --destructive-foreground: #ffffff; /* White */
+  --border: #d1d1d1; /* Light border for separation */
+  --input: #ffffff; /* Input fields */
+  --ring: rgba(255, 123, 0, 0.5); /* Light orange for focus states */
+  --chart-1: #ff7b00; /* For charts and graphs */
+  --chart-2: #0a1a3f; /* Dark Navy Blue for charts */
+  --chart-3: #f7f7f7; /* Light Gray for charts */
+  --chart-4: #f0f0f0; /* Subtle gray for charts */
+  --chart-5: #d1d1d1; /* Another gray for charts */
+  --radius: 0.5rem; /* Rounded corners */
+  --sidebar: #0a1a3f; /* Dark Navy Blue for sidebar */
+  --sidebar-foreground: #ffffff; /* White for sidebar text */
+  --sidebar-primary: #ff7b00; /* Orange for sidebar accents */
+  --sidebar-primary-foreground: #ffffff; /* White for sidebar text */
+  --sidebar-accent: #f7f7f7; /* Light gray for sidebar accents */
+  --sidebar-accent-foreground: #0a1a3f; /* Dark Navy Blue for sidebar text */
+  --sidebar-border: #d1d1d1; /* Light border for sidebar */
+  --sidebar-ring: rgba(255, 123, 0, 0.5); /* Light orange for sidebar focus */
+}
+
+.dark {
+  --background: #0a1a3f; /* Dark Navy Blue */
+  --foreground: #ffffff; /* White */
+  --card: #1a2b5f; /* Slightly lighter navy */
+  --card-foreground: #ffffff; /* White */
+  --popover: #1a2b5f; /* Slightly lighter navy */
+  --popover-foreground: #ffffff; /* White */
+  --primary: #ff7b00; /* Orange */
+  --primary-foreground: #ffffff; /* White */
+  --secondary: #2a3b6f; /* Medium navy */
+  --secondary-foreground: #ffffff; /* White */
+  --muted: #2a3b6f; /* Medium navy */
+  --muted-foreground: #d1d5db; /* Light gray */
+  --accent: #ff7b00; /* Orange */
+  --accent-foreground: #ffffff; /* White */
+  --destructive: #d9534f; /* Red for errors */
+  --destructive-foreground: #ffffff; /* White */
+  --border: #2a3b6f; /* Medium navy */
+  --input: #2a3b6f; /* Medium navy */
+  --ring: rgba(255, 123, 0, 0.5); /* Light orange for focus states */
+  --chart-1: #ff7b00; /* Orange */
+  --chart-2: #ffffff; /* White */
+  --chart-3: #d1d5db; /* Light gray */
+  --chart-4: #2a3b6f; /* Medium navy */
+  --chart-5: #1a2b5f; /* Slightly lighter navy */
+  --sidebar: #0a1a3f; /* Dark Navy Blue */
+  --sidebar-foreground: #ffffff; /* White */
+  --sidebar-primary: #ff7b00; /* Orange */
+  --sidebar-primary-foreground: #ffffff; /* White */
+  --sidebar-accent: #2a3b6f; /* Medium navy */
+  --sidebar-accent-foreground: #ffffff; /* White */
+  --sidebar-border: #2a3b6f; /* Medium navy */
+  --sidebar-ring: rgba(255, 123, 0, 0.5); /* Light orange */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
