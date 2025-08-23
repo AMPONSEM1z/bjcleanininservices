@@ -1,38 +1,48 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Montserrat } from "next/font/google"
-import { Open_Sans } from "next/font/google"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import { Open_Sans } from "next/font/google";
+import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-montserrat",
   weight: ["400", "600", "700", "900"],
-})
+});
 
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-open-sans",
   weight: ["400", "500", "600"],
-})
+});
 
 export const metadata: Metadata = {
   title: "B&J Professional Cleaning Services - Your Trusted Cleaning Partner",
   description:
     "Professional cleaning services for restaurants, buildings, hospitals, and events in Accra, Ghana. 20% OFF ongoing promotion.",
-  generator: "v0.app",
-}
+  generator: "me",
+  icons: {
+    icon: "/favico.ico", // ✅must start with / (from public/)
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${openSans.variable} antialiased`}>
-      <body className="font-sans bg-background text-foreground">{children}</body>
+    <html
+      lang="en"
+      className={`${montserrat.variable} ${openSans.variable} antialiased`}
+    >
+      <body className="font-sans bg-background text-foreground">
+        {children}
+      </body>
     </html>
-  )
+  );
 }

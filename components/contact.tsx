@@ -1,5 +1,11 @@
 "use client";
 
+export const metadata = {
+  title: "Contact Us | BJ Cleaning Services",
+  description:
+    "Get in touch with BJ Cleaning Services today. Call us or fill out our contact form to book professional cleaning for your home or office in Accra.",
+};
+
 import type React from "react";
 
 import { useState } from "react";

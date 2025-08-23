@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Our Cleaning Services | BJ Cleaning Services",
+  description:
+    "Explore our full range of cleaning services — deep cleaning, office cleaning, and move-in/move-out cleaning. Trusted by homeowners & businesses in Accra.",
+};
+
 import {
   Card,
   CardContent,

@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About Us | BJ Cleaning Services",
+  description:
+    "BJ Cleaning Services is dedicated to delivering quality, affordable cleaning in Accra. Learn more about our story and why customers trust us.",
+};
+
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
