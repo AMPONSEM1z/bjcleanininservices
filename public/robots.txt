@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bjcleaningservice.netlify.app/
+
+# Sitemaps
+Sitemap: https://bjcleaningservice.netlify.app/sitemap.xml
